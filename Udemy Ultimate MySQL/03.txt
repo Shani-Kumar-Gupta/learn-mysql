@@ -1,0 +1,40 @@
+// ***************** Creating Database and Table ******************** //
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. SHOW DATABASES;
+2. SELECT DATABASE();
+3. CREATE DATABASE <name>;
+4. USE <db_name>;
+5. DROP DATABASE <db_name>;
+5. CREATE TABLE <table_name> (
+  column_name data_types,
+  column_name data_types
+);
+6. SHOW TABLES;
+7. DROP TABLE <table_name>;
+8. DESC <table_name>;
+9. SHOW COLUMNS FROM <table_name>;
+
+// ****************** Data Types in MySQL ************************** //
+NUMERIC DATATYPES:
+  INT
+  TINYINT
+  SMALLINT
+  MEDIUMINT
+  BIGINT
+  FLOAT
+  DOUBLE
+  DECIMAL
+  BIT
+
+STRING DATATYPES:
+  CHAR
+  VARCHAR
+  TEXT
+
+DATE DATATYPES:
+  DATE
+  TIME
+  DATETIME
+  TIMESTAMP
+  YEAR

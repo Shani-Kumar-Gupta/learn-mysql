@@ -1,0 +1,4 @@
+Eg.
+select title from books where pages = (select max(pages) from books);
+
+// if we are having multiple row having the same number of pages;

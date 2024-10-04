@@ -1,0 +1,29 @@
+// Optimize Storage
+
+1. CHAR vs. VARCHAR
+- CHAR (fixed length) and VARCHAR (Variable length)
+- CHAR add right-padded space in the string if string length is less than the mentioned CHAR length.
+- Where VARCHAR does not add extra spaces in the string.
+- VARCHAR is more optimized than CHAR becuase it's not adding extra spaces in the string.
+eg.
+CHAR(2)- 'NY', 'IN', 'I ' - behind the scene adding extra spaces in the string but while retriving will get the string without extra spaces
+VARCHAR(10) - 'Shani', 'Aman', 'Priyanshu'
+
+2. INT, TINYINT, BIGINT-
+(noofchildren TINYINT UNSIGNED)
+
+3. DECIMAL(Total no of digit, Digit after decimal) - Presize input - more precise values
+
+4. FLOAT & DOUBLE - Store larger numbers using less space but it comes at the cost of precision
+  Float - 4 Bytes Memory - Upto 7 digits precision
+  Double - 8 Bytes Memory - Upto 15 digits precision
+
+5. Dates & Times
+  - DATE (YYYY-MM-DD)
+  - TIME (HH:MM:SS)
+  - DATETIME (YYYY-MM-DD HH:MM:SS)
+
+  INSERT INTO people (name, birthdate, birthtime, birthdt) VALUES
+  ('Hazel', CURDATE(), CURTIME(), NOW());
+
+6. Some usefull Date Function-

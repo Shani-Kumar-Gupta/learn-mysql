@@ -1,0 +1,59 @@
+1. Database: It's just a bunch of tables. 
+2. Tables (True Heart of an SQL): Table is a collection of related data held in a structured format within a database;
+3. Tables Data Types: 
+  - We specify the name of the columns along with data types while creating the tables. 
+  - We need consistency with data types.
+
+  Numeric DataTypes:
+    INT
+    SMALLINT
+    TINYINT
+    BIGINT
+    MEDIUMINT
+    NUMERIC
+    DECIMAL
+    FLOAT
+    DOUBLE
+    BIT
+
+  String DataTypes:
+    CHAR
+    VARCHAR
+    BINARY
+    VARBINARY
+    BLOB
+    TINYBLOB
+    MEDIUMBLOB
+    LONGBLOG
+    TEXT
+    TINYTEXT
+    MEDIUMTEXT
+    LONGTEXT
+    ENUM
+
+  Date DataTypes:
+    DATE
+    DATETIME
+    TIMESTAMP
+    TIME
+    YEAR
+
+4. NOT NULL constraint
+5. Quotes in MySQL - ('Shani\'s laptop');
+
+CREATE TABLE tablename (column_name type NOT NULL DEFAULT 'value', column_name type NOT NULL);
+
+6. PRIMARY KEY: It's a unique identifire - used to identify rows uniquely
+
+CREATE TABLE unique_cats3 (
+    cat_id INT AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    PRIMARY KEY (cat_id)
+);
+
+7. WHERE Clause: Narrow Down the rows;
+8. Aliases;
+
+9. Update: How to alter existing data from the table.
+UPDATE table_name SET column_name="Value" Where condition;

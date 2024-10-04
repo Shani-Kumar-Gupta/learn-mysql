@@ -1,0 +1,29 @@
+/* CRUD OPERATION - CREATE, READ, UPDATE and DELETE */
+
+CREATE:
+CREATE DATABASE DB_NAME;
+USE DB_NAME;
+SELECT DATABASE();
+
+CREATE TABLE table_name (
+  column_name dataType NOT NULL PRIMARY KEY DEFAULT "value" AUTO_INCREMENT,
+  column_name1 .....,
+);
+SHOW TABLES;
+SHOW COLUMNS FROM TABLE_NAME;
+DESC TABLE_NAME;
+DROP TABLE table_name;
+
+INSERT INTO table_name (column_name, column_name1) VALUES (1, 'value'), (2, 'value);
+SHOW WARNINGS;
+
+READ:
+SELECT * FROM table_name;
+WHERE Clause - To narrow down the rows
+
+UPDATE:
+UPDATE table_name SET column_name1 = 'value' WHERE condition;
+
+DELETE:
+DELETE FROM table_name;
+DELETE FROM table_name WHERE condition;

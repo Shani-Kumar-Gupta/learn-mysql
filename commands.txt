@@ -1,0 +1,20 @@
+1. SHOW DATABASES;
+2. CREATE DATABASE DB_NAME;
+3. USE DB_NAME;
+4. DROP DATABASE DB_NAME;
+5. SELECT DATABASE(); // SHOW THE NAME OF SELECTED DATABASE
+6. Creat Table into DATABASE:
+    CREATE TABLE tablename
+    (
+      column_name datatype NOT NULL PRIMARY KEY DEFAULT '' AUTO_INCREMENT,
+      column_name datatype
+    );
+7. SHOW TABLES;
+8. DROP TABLE tablename;
+9. SHOW COLUMNS FROM tablename;
+10. DESC tablename;
+
+// Insert data into the database table
+11. INSERT INTO tablename (column_name1, column_name2, ....column_name[n]) VALUES (''), ('');
+
+// Section 3: 22

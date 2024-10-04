@@ -1,0 +1,16 @@
+1. Reverse and Uppercase the following sentences:
+ "Why does my cat look at me with such hatred?"
+Answer: SELECT UPPER(REVERSE("Why does my cat look at me with such hatred?"));
+
+2. What Does This Print Out?
+SELECT REPLACE(CONCAT('I', ' ', 'like', ' ', 'cats'), ' ', '-');
+Answer: I-like-cats
+
+3. SELECT CONCAT(SUBSTR(title, 1, 10), '...') as 'short title', CONCAT(author_lname, ',', author_fname) as author, CONCAT(stock_quantity, ' in stock') as quantity FROM books;
+4. SELECT CONCAT(SUBSTR(title, 1, 10), '...') as 'short title' FROM books;
+5. SELECT title as title, CHAR_LENGTH(title) as 'character count' FROM books;
+6. SELECT CONCAT(title, ' was released in ', released_year) as blurb FROM books;
+7. SELECT UCASE(CONCAT(author_fname, ' ', author_lname)) as 'full name in caps' FROM books;
+8. SELECT author_lname as forwards, REVERSE(author_lname) as backwards FROM books;
+9. SELECT REPLACE(title, ' ', '->') as title FROM books;
+10. 

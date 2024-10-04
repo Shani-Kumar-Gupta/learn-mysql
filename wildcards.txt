@@ -1,0 +1,4 @@
+1. % - Zero or more then one character
+2. _ - Exact one character
+3. __ - (Two underscore) - Exact two characters
+4. \ - Esacping WILDCARD - LIKE '%\%%'

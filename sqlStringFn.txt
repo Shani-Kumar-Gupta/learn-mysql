@@ -1,0 +1,24 @@
+/* SQL String Function */
+
+CREATE DATABASE book_shop;
+USE book_shop;
+source book_data.sql;
+
+1. CONCAT - Combined data
+2. CONCAT_WS - Combined data with seprator ('-', column1, column2, ...)
+3. SUBSTRING or SUBSTR - 
+  Syntax -
+    Select SUBSTRING(columnname, start, end);
+
+4. REPLACE - Replacing a part of string - (text, text_to_replace_with_whom, text_to_replace);
+5. REVERSE - 
+6. CHAR_LENGTH - 
+7. LENGTH
+8. UPPER() - UCASE()
+9. LOWER() -  LCASE()
+10. INSERT - INSERT('Shani Gupta', 6, 0, ' Kumar');
+    INSERT('Shani Gupta', 6, 5, ' Kumar');
+11. LEFT - Left most character - SELECT LEFT ('Shani', 3); // Sha
+12. RIGHT - Right most character - SELECT RIGHT('Shani', 3); // ani
+13. REPEAT - SELECT REPEAT('Shani', 3); //ShaniShaniShani
+14. TRIM - Trim leading and trailing spaces - SELECT TRIM('    Shani K Gupta    ');

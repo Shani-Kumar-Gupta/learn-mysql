@@ -1,0 +1,16 @@
+/* Show the list of databases */
+- SHOW DATABASES;
+
+/* Create a database */
+- CREATE DATABASE DB_NAME;
+
+/* Use a specific database */
+- USE DB_NAME;
+
+/* Check selected database */
+- SELECT DATABASE();
+
+/* Drop or Delete a database */
+- DROP DATABASE DB_NAME;
+
+

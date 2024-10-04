@@ -1,1 +1,20 @@
 /* CRUD */
+
+// Create table:
+CREATE TABLE tableName (
+  columnName dataType NOT NULL PRIMARY KEY AUTO_INCREMENT DEFAULT 'defaultVal',
+  columnName1 ......,
+  columnName2 ......,
+  .
+  .
+  .
+);
+
+// Read:
+SELECT * FROM tableName;
+
+// Update:
+UPDATE tableName SET columnName = 'Value', columnName1 = 'value' WHERE condition;
+
+// Delete:
+DELETE FROM tableName WHERE condition;

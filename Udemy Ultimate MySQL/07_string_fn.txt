@@ -1,0 +1,55 @@
+1. CONCAT
+2. CONCAT_WS -> Concat with Separater
+    Syntax: CONCAT_WS('-', column1, column2, ......);
+3. SUBSTRING -> Work with parts of string
+    Syntax: SUBSTRING(columnName, Start Position, Length);
+    Example: SELECT SUBSTRING('Hello World!', 1, 7); ---> Output: Hello W
+4. SUBSTR
+5. REPLACE - Replace parts of string
+    Syntax: REPLACE(columnName, replaceTo, replaceFrom);
+    Example: SELECT REPLACE('Hello World', 'Hell', '$%%^'); ---> Output: $%%^o World
+6. REVERSE - 
+    Syntax: REVERSE(columnName)
+    Example: SELECT REVERSE('Shani'); ---> Output: inahS
+7. CHAR_LENGTH - find the length of the string
+    SELECT CHAR_LENGTH('Hello World');
+    SELECT CHAR_LENGTH(title) as length, title FROM books;
+    SELECT author_lname, CHAR_LENGTH(author_lname) AS 'length' FROM books;
+    SELECT CONCAT(author_lname, ' is ', CHAR_LENGTH(author_lname), ' characters long') FROM books;
+8. UPPER - Convert String into uppercase
+9. LOWER - Convert String into lowercase
+10. INSERT - Replace or Addon the string
+    Syntax: INSERT(columnName, position, no of Char to replace, string);
+11. Left - Return the leftmost len characters
+    Syntax: LEFT(columnName, 5);
+    Example: LEFT('Hello World', 5); ---> Output: Hello
+12. RIGHT - Return the rightmost len characters
+    Syntax: RIGHT(columnName, len);
+13. TRIM - Remove leading and trailing spaces from the string
+
+------------------------------------------------------------------------------------------------------------------
+---------------------- STRING FUNCTION Exercise -----------------------
+
+SELECT REVERSE(UPPER('Why does my cat look at me with such hatred?'));
+ 
+SELECT REPLACE(title, ' ', '->') AS title FROM books;
+ 
+SELECT 
+    author_lname AS forwards, REVERSE(author_lname) AS backwards
+FROM
+    books;
+    
+ 
+SELECT UPPER(CONCAT(author_fname, ' ', author_lname)) AS 'full name in caps' FROM books;
+ 
+ 
+SELECT CONCAT(title, ' was released in ', released_year) AS blurb FROM books;
+ 
+SELECT title, CHAR_LENGTH(title) AS character_count FROM books;
+ 
+SELECT 
+    CONCAT(SUBSTR(title, 1, 10), '...') AS short_title,
+    CONCAT(author_lname, ',', author_fname) AS author,
+    CONCAT(stock_quantity, ' in stock') AS quantity
+FROM
+    books;

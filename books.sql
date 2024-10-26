@@ -1,3 +1,7 @@
+SHOW DATABASES;
+
+USE book_db;
+
 CREATE TABLE books (
 	book_id INT NOT NULL AUTO_INCREMENT,
 	title VARCHAR(100),
@@ -9,8 +13,7 @@ CREATE TABLE books (
 	PRIMARY KEY(book_id)
 );
 
-INSERT INTO
-	books (title, author_fname, author_lname, released_year, stock_quantity, pages )
+INSERT INTO books (title, author_fname, author_lname, released_year, stock_quantity, pages )
 VALUES
 	(
 		'The Namesake',
